@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+body{
+    background-color: #115362;
+    text-align: center;
+}
+
+.container
+{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game
+{
+height: 60vh;
+width: 60vh;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 0.75rem;
+}
+
+.box
+{
+    height: 18vh;
+    width: 18vh;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    font-size: 11vh;
+    color: #862a27;
+    text-align: center;
+    background-color:bisque;
+}
+
+
+.Reset {
+    position: relative;
+    height: 6vh;
+    width: 20vh;
+    font-size: larger;
+    font-weight: 550;
+    cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+    border: 2px solid aliceblue;
+    overflow: hidden; /* Ensures the ::after effect stays within the button */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.Reset::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: aliceblue;
+    transition: width 0.4s ease-in-out; 
+}
+
+.Reset:hover {
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glowing border effect */
+    transform: scale(1.05); 
+}
+
+.Reset:hover::after {
+    width: 100%; 
+}
+
+.Reset:active {
+    transform: scale(0.95); 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgb(233, 199, 122);
+}
+
+.box:active{
+    transform: scale(0.95); 
+}
+
+#msg{
+    color: rgb(233, 199, 122);
+    font-size: 8vmin ;
+    display: none;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff; /* White text */
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    text-decoration: wavy;
+    text-shadow: 0 0 10px #e04f0c, 0 0 20px #ce0f0f, 0 0 30px #0e43e1;
+    
+}
+
